@@ -5,7 +5,9 @@ This repository contains the completed project and the correct code for the *Ind
 
 <br>
 
+### Metric Selection
 <img src="Project Resources/AppComplete_Index_Metric.gif" width="400"/>
 
+### Imperial Selection
 <img src="Project Resources/AppComplete_Index_Imperial.gif" width="400"/>
 

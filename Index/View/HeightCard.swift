@@ -18,8 +18,6 @@ struct HeightCard: View {
             
             CardBackground()
             
-            
-            
             if model.unit == .metric {
                 
                 VStack {
@@ -72,5 +70,6 @@ struct HeightCard: View {
                 }
             }
         }   .frame(width: 300, height: 500)
+        // End of ZStack
     }
 }

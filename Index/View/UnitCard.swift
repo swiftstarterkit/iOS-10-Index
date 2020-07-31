@@ -28,5 +28,6 @@ struct UnitCard: View {
                     .frame(width: 150)
             }
         }   .frame(width: 300, height: 500)
+        // End of ZStack
     }
 }

@@ -13,5 +13,6 @@ struct TitleCard: View {
             CardBackground()
             CardLabel(title: "Index", caption: "BMI Calculator")
         } .frame(width: 300, height: 500)
+        // End of ZStack
     }
 }

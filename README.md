@@ -5,4 +5,7 @@ This repository contains the completed project and the correct code for the *Ind
 
 <br>
 
-<img src="Project Resources/AppComplete_Index.gif" width="400"/>
+<img src="Project Resources/AppComplete_Index_Metric.gif" width="400"/>
+
+<img src="Project Resources/AppComplete_Index_Imperial.gif" width="400"/>
+

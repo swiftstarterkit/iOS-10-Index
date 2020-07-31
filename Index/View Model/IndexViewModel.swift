@@ -13,7 +13,7 @@ class IndexViewModel: ObservableObject {
     
     func moveToNextCard() {
         withAnimation {
-            if activeCardIndex < 5 {
+            if activeCardIndex < 4 {
                 activeCardIndex += 1
             } else {
                 activeCardIndex = 0

@@ -9,18 +9,50 @@ import Foundation
 
 class IndexModel: ObservableObject {
     
-    @Published var age: Float = 26
-    @Published var height: Float = 165
-    @Published var weight: Float = 63
-    @Published var gender: Gender = Gender.female
-    @Published var resultBMR: Float = 0
+    @Published var unit: Unit = Unit.metric
     
-    func calculateBMR() {
+    @Published var metricHeightCM: Float = 170
+    @Published var metricWeightKG: Float = 65
+    
+    @Published var imperialHeightFT: Float = 6
+    @Published var imperialHeightIN: Float = 2
+    @Published var imperialWeightLB: Float = 150
+    
+    @Published var resultBMI: Float = 0
+    
+    var message: String {
         
-        if gender == .female {
-            resultBMR = (10 * weight) + (6.25 * height) - (5 * age) - 161
-        } else {
-            resultBMR = (10 * weight) + (6.25 * height) - (5 * age) + 5
+        switch resultBMI {
+        case 0..<16:
+            return "Severe Thinness"
+        case 16..<17:
+            return "Moderate Thinness"
+        case 17..<18.5:
+            return "Mild Thinness"
+        case 18.5..<25:
+            return "Normal"
+        case 25..<30:
+            return "Overweight"
+        case 30..<35:
+            return "Obese Class I"
+        case 35..<40:
+            return "Obese Class II"
+        case 40...:
+            return "Obese Class III"
+        default:
+            return "Calculation Error"
+        }
+        
+    }
+    
+    func calculateBMI() {
+        
+        switch unit {
+        case .metric:
+            resultBMI = metricWeightKG / pow(metricHeightCM / 100, 2)
+        case .imperial:
+            let totalImperialHeight = imperialHeightIN + ( imperialHeightFT * 12 )
+            resultBMI = 703 * (imperialWeightLB / pow(totalImperialHeight, 2))
         }
     }
 }

@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct SliderValue: View {
+    
+    @EnvironmentObject var model: IndexModel
+    
     let value: Float
+    let withDecimal: Bool
+    
     var body: some View {
-        Text(String(format: "%0.0f", value))
-            .font(.title)
-            .frame(width: 80, height: 80)
-            .foregroundColor(Color(.white))
-            .background(Color(.systemRed))
-            .clipShape(Circle())
+        
+        if withDecimal == true {
+            
+            Text(String(format: "%0.1f", value))
+                    .font(.title)
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(Color(.white))
+                    .background(Color(.systemRed))
+                    .clipShape(Circle())
+            
+        } else {
+            
+            Text(String(format: "%0.0f", value))
+                    .font(.title)
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(Color(.white))
+                    .background(Color(.systemRed))
+                    .clipShape(Circle())
+        }
+        
     }
 }

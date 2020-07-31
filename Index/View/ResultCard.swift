@@ -22,16 +22,22 @@ struct ResultCard: View {
                 CardLabel(title: "Result", caption: "Your Body Mass Index is")
                 
                 VStack {
-                    
-                    Text(String(format: "%0.0f", model.resultBMR))
+                    Text(String(format: "%0.1f", model.resultBMI))
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color(.systemRed))
                     
-                    Text("Calories / Day")
+                    Text("kg / m^2")
                         .font(.caption)
                         .padding(.top, 20)
                         .foregroundColor(Color(.systemGray))
+                    
+                    Text("\(model.message)")
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .padding(.top, 10)
+                        .foregroundColor(Color(.systemGray))
+                    
                     
                 }
             }

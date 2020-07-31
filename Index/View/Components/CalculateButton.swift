@@ -23,7 +23,7 @@ struct CalculateButton: View {
             .frame(height: 100)
             .padding(.top, 50)
             .onTapGesture() {
-                self.model.calculateBMR()
+                self.model.calculateBMI()
                 self.viewModel.moveToNextCard()
             }
     }

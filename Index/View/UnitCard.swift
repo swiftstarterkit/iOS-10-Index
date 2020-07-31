@@ -19,11 +19,11 @@ struct UnitCard: View {
             
             VStack {
                 
-                CardLabel(title: "Gender", caption: "Select Your Gender")
+                CardLabel(title: "Unit", caption: "Select Unit Type")
                 
-                Picker("Gender", selection: $model.gender) {
-                    Text("Male").tag(Units.male)
-                    Text("Female").tag(Units.female)
+                Picker("Unit", selection: $model.unit) {
+                    Text("Metric").tag(Unit.metric)
+                    Text("Imperial").tag(Unit.imperial)
                 }   .pickerStyle(SegmentedPickerStyle())
                     .frame(width: 150)
             }

@@ -18,7 +18,7 @@ struct CardLabel: View {
             Text(title)
                 .font(.title)
                 .fontWeight(.bold)
-                .foregroundColor(Color(.systemRed))
+                .foregroundColor(Color(.systemGreen))
                 .padding(.bottom, 10)
             
             Text(caption)

@@ -27,7 +27,7 @@ struct HeightCard: View {
                         SliderValue(value: model.metricHeightCM, withDecimal: false)
                             .padding(.bottom, 15)
                         Slider(value: $model.metricHeightCM, in: 1...250, step: 1.0)
-                            .accentColor(Color(.systemRed))
+                            .accentColor(Color(.systemGreen))
                     }   .frame(width: 150)
                 }
                 
@@ -49,7 +49,7 @@ struct HeightCard: View {
                                 .padding(.top, 10)
                             
                             Slider(value: $model.imperialHeightFT, in: 1...12, step: 1.0)
-                                .accentColor(Color(.systemRed))
+                                .accentColor(Color(.systemGreen))
                                 .padding(.top, 15)
                         }   .frame(width: 100)
                         
@@ -63,7 +63,7 @@ struct HeightCard: View {
                                 .padding(.top, 10)
                             
                             Slider(value: $model.imperialHeightIN, in: 0...12, step: 0.5)
-                                .accentColor(Color(.systemRed))
+                                .accentColor(Color(.systemGreen))
                                 .padding(.top, 15)
                         }   .frame(width: 100)
                     }

@@ -28,7 +28,7 @@ struct WeightCard: View {
                         SliderValue(value: model.metricWeightKG, withDecimal: false)
                             .padding(.bottom, 15)
                         Slider(value: $model.metricWeightKG, in: 1...250, step: 1.0)
-                            .accentColor(Color(.systemRed))
+                            .accentColor(Color(.systemGreen))
                     }   .frame(width: 150)
                     
                 }
@@ -41,7 +41,7 @@ struct WeightCard: View {
                         SliderValue(value: model.imperialWeightLB, withDecimal: false)
                             .padding(.bottom, 15)
                         Slider(value: $model.imperialWeightLB, in: 1...350, step: 1.0)
-                            .accentColor(Color(.systemRed))
+                            .accentColor(Color(.systemGreen))
                     }   .frame(width: 150)
                 }
                 

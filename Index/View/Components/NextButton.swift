@@ -14,7 +14,7 @@ struct NextButton: View {
     var body: some View {
         Image(systemName: "chevron.right.circle.fill")
             .font(.largeTitle)
-            .foregroundColor(Color(.systemRed))
+            .foregroundColor(Color(.systemGreen))
             .frame(height: 100)
             .padding(.top, 50)
             .onTapGesture(perform: viewModel.moveToNextCard)

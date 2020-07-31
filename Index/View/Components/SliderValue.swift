@@ -22,7 +22,7 @@ struct SliderValue: View {
                     .font(.title)
                     .frame(width: 80, height: 80)
                     .foregroundColor(Color(.white))
-                    .background(Color(.systemRed))
+                    .background(Color(.systemGreen))
                     .clipShape(Circle())
             
         } else {
@@ -31,7 +31,7 @@ struct SliderValue: View {
                     .font(.title)
                     .frame(width: 80, height: 80)
                     .foregroundColor(Color(.white))
-                    .background(Color(.systemRed))
+                    .background(Color(.systemGreen))
                     .clipShape(Circle())
         }
         

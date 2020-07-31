@@ -25,7 +25,7 @@ struct ResultCard: View {
                     Text(String(format: "%0.1f", model.resultBMI))
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                        .foregroundColor(Color(.systemRed))
+                        .foregroundColor(Color(.systemGreen))
                     
                     Text("kg / m^2")
                         .font(.caption)

@@ -18,7 +18,7 @@ struct CalculateButton: View {
             .fontWeight(.bold)
             .padding(.all, 8)
             .foregroundColor(Color(.white))
-            .background(Color(.systemRed))
+            .background(Color(.systemGreen))
             .cornerRadius(20)
             .frame(height: 100)
             .padding(.top, 50)

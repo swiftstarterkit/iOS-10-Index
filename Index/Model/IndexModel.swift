@@ -11,14 +11,14 @@ class IndexModel: ObservableObject {
     
     @Published var unit: Unit = Unit.metric
     
-    @Published var metricHeightCM: Float = 170
-    @Published var metricWeightKG: Float = 65
+    @Published var metricHeightCM: Double = 170
+    @Published var metricWeightKG: Double = 65
     
-    @Published var imperialHeightFT: Float = 6
-    @Published var imperialHeightIN: Float = 2
-    @Published var imperialWeightLB: Float = 150
+    @Published var imperialHeightFT: Double = 6
+    @Published var imperialHeightIN: Double = 2
+    @Published var imperialWeightLB: Double = 150
     
-    @Published var resultBMI: Float = 0
+    @Published var resultBMI: Double = 0
     
     var message: String {
         
@@ -48,11 +48,15 @@ class IndexModel: ObservableObject {
     func calculateBMI() {
         
         switch unit {
+        
         case .metric:
             resultBMI = metricWeightKG / pow(metricHeightCM / 100, 2)
+            
         case .imperial:
             let totalImperialHeight = imperialHeightIN + ( imperialHeightFT * 12 )
             resultBMI = 703 * (imperialWeightLB / pow(totalImperialHeight, 2))
+            
         }
     }
+    
 }

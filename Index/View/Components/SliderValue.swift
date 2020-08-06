@@ -11,7 +11,7 @@ struct SliderValue: View {
     
     @EnvironmentObject var model: IndexModel
     
-    let value: Float
+    let value: Double
     let withDecimal: Bool
     
     var body: some View {

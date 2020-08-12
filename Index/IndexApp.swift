@@ -11,13 +11,11 @@ import SwiftUI
 struct IndexApp: App {
     
     @StateObject var model: IndexModel = IndexModel()
-    @StateObject var viewModel: IndexViewModel = IndexViewModel()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(model)
-                .environmentObject(viewModel)
         }
     }
 }

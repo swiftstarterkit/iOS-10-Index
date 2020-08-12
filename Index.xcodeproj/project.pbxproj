@@ -12,7 +12,6 @@
 		7A057E7D24D46A2100ADA7C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A057E7C24D46A2100ADA7C1 /* Assets.xcassets */; };
 		7A057E8024D46A2100ADA7C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A057E7F24D46A2100ADA7C1 /* Preview Assets.xcassets */; };
 		7A057E8824D4786B00ADA7C1 /* IndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A057E8724D4786B00ADA7C1 /* IndexModel.swift */; };
-		7A057E8A24D4787500ADA7C1 /* IndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A057E8924D4787500ADA7C1 /* IndexViewModel.swift */; };
 		7A057E8F24D4795400ADA7C1 /* CardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A057E8E24D4795400ADA7C1 /* CardBackground.swift */; };
 		7A057E9124D4796000ADA7C1 /* CardLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A057E9024D4796000ADA7C1 /* CardLabel.swift */; };
 		7A057E9324D479AE00ADA7C1 /* TitleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A057E9224D479AE00ADA7C1 /* TitleCard.swift */; };
@@ -34,7 +33,6 @@
 		7A057E7F24D46A2100ADA7C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A057E8124D46A2100ADA7C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A057E8724D4786B00ADA7C1 /* IndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexModel.swift; sourceTree = "<group>"; };
-		7A057E8924D4787500ADA7C1 /* IndexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewModel.swift; sourceTree = "<group>"; };
 		7A057E8E24D4795400ADA7C1 /* CardBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackground.swift; sourceTree = "<group>"; };
 		7A057E9024D4796000ADA7C1 /* CardLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLabel.swift; sourceTree = "<group>"; };
 		7A057E9224D479AE00ADA7C1 /* TitleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCard.swift; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 			children = (
 				7A057E7824D46A1F00ADA7C1 /* IndexApp.swift */,
 				7A057E8C24D4787E00ADA7C1 /* Model */,
-				7A057E8D24D4788400ADA7C1 /* View Model */,
 				7A057E8B24D4787900ADA7C1 /* View */,
 				7A057E7C24D46A2100ADA7C1 /* Assets.xcassets */,
 				7A057E8124D46A2100ADA7C1 /* Info.plist */,
@@ -118,14 +115,6 @@
 				7A057EA724D48C7A00ADA7C1 /* Unit.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		7A057E8D24D4788400ADA7C1 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				7A057E8924D4787500ADA7C1 /* IndexViewModel.swift */,
-			);
-			path = "View Model";
 			sourceTree = "<group>";
 		};
 		7A057E9C24D479DA00ADA7C1 /* Components */ = {
@@ -218,7 +207,6 @@
 				7A057E8824D4786B00ADA7C1 /* IndexModel.swift in Sources */,
 				7A057E9B24D479D100ADA7C1 /* ResultCard.swift in Sources */,
 				7A057E9924D479C800ADA7C1 /* WeightCard.swift in Sources */,
-				7A057E8A24D4787500ADA7C1 /* IndexViewModel.swift in Sources */,
 				7A057EA624D47DEA00ADA7C1 /* SliderValue.swift in Sources */,
 				7A057EA824D48C7A00ADA7C1 /* Unit.swift in Sources */,
 				7A057EA224D47B6000ADA7C1 /* NextButton.swift in Sources */,

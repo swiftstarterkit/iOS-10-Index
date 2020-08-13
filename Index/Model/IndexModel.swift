@@ -10,14 +10,11 @@ import Foundation
 class IndexModel: ObservableObject {
     
     @Published var unit: Unit = Unit.metric
-    
     @Published var metricHeightCM: Double = 170
     @Published var metricWeightKG: Double = 65
-    
     @Published var imperialHeightFT: Double = 6
     @Published var imperialHeightIN: Double = 2
     @Published var imperialWeightLB: Double = 150
-    
     @Published var resultBMI: Double = 0
     
     var message: String {

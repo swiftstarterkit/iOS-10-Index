@@ -9,6 +9,9 @@ import SwiftUI
 
 struct CalculateButton: View {
     
+    @EnvironmentObject var model: IndexModel
+    @Binding var activeCardIndex: Int
+    
     var body: some View {
         Text("CALCULATE")
             .font(.caption2)
@@ -19,6 +22,20 @@ struct CalculateButton: View {
             .cornerRadius(20)
             .frame(height: 100)
             .padding(.top, 50)
+            .onTapGesture {
+                model.calculateBMI()
+                moveToNextCard()
+            }
+    }
+    
+    func moveToNextCard() {
+        withAnimation {
+            if activeCardIndex < 4 {
+                activeCardIndex += 1
+            } else {
+                activeCardIndex = 0
+            }
+        }
     }
 }
 

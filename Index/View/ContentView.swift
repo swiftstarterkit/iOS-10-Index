@@ -40,24 +40,12 @@ struct ContentView: View {
             }
             
             if activeCardIndex <= 2 || activeCardIndex == 4 {
-                NextButton()
-                    .onTapGesture(perform: moveToNextCard)
+                
+                NextButton(activeCardIndex: $activeCardIndex)
+                
             } else {
-                CalculateButton()
-                    .onTapGesture() {
-                        model.calculateBMI()
-                        moveToNextCard()
-                    }
-            }
-        }
-    }
-    
-    func moveToNextCard() {
-        withAnimation {
-            if activeCardIndex < 4 {
-                activeCardIndex += 1
-            } else {
-                activeCardIndex = 0
+                
+                CalculateButton(activeCardIndex: $activeCardIndex)
             }
         }
     }
